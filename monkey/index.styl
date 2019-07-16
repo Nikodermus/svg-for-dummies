@@ -1,0 +1,34 @@
+@import "nib"
+
+global-reset()
+
+body
+    height: 100vh
+    width: 100vw
+    display: flex
+    justify-content: center
+    align-items: center
+
+@keyframes monkey
+    10%
+        stroke: red
+        opacity: 0.6
+
+    50%
+        stroke: pink
+
+    60
+        stroke: aqua
+
+    100%
+        opacity: 1
+        stroke-dashoffset: 0
+
+.monkey
+    opacity: 0
+    stroke: purple
+    stroke-width: 3px
+    stroke-dashoffset: 2500
+    stroke-dasharray: 2500
+    animation: monkey 4s ease-out forwards
+    animation-delay: 1s

@@ -1,0 +1,32 @@
+@import "nib"
+
+global-reset()
+
+body
+    height: 100vh
+    width: 100vw
+    display: flex
+    justify-content: center
+    align-items: center
+
+@keyframes draw
+    to
+        stroke-dashoffset: 650
+        transform: rotate(-360deg)
+
+@keyframes drawHex
+    to
+        stroke-dashoffset: 440
+        transform: rotate(360deg)
+
+.square
+    animation: draw 1s infinite
+    stroke-dasharray: 650
+    stroke-dashoffset: -650
+    transform-origin: 50% 50%
+
+.hexagon
+    transform-origin: 50% 50%
+    animation: drawHex 1s infinite
+    stroke-dasharray: 440
+    stroke-dashoffset: -440
