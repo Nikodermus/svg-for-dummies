@@ -1,0 +1,91 @@
+$color-black: #444;
+$color-black-darker: #151515;
+$color-green-light: #36ff79;
+$color-green-lightest: #cff9da;
+$color-green: #2ecc5e;
+$color-orange-dark: #c48a55;
+$color-orange: #ffb86c;
+$color-white: #fff;
+
+* {
+    cursor: url("./sun.png"), auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+}
+
+#root {
+    background: $color-black-darker;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fill-green {
+    fill: $color-green;
+}
+
+.fill-green-light {
+    fill: $color-green-light;
+}
+
+.fill-white {
+    fill: $color-white;
+}
+
+.fill-black {
+    fill: $color-black;
+}
+
+.fill-orange-dark {
+    fill: $color-orange-dark;
+}
+
+.fill-orange {
+    fill: $color-orange;
+}
+
+.fill-green-lightest {
+    fill: $color-green-lightest;
+}
+
+.eyebrowns {
+    fill: none;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 18px;
+    stroke: $color-black;
+}
+
+.watcher {
+    width: 300px;
+
+    &__cactus {
+        left: 7%;
+        position: relative;
+        top: 4%;
+        width: 80%;
+    }
+
+    &__pot {
+        position: relative;
+        width: 70%;
+        z-index: 2;
+    }
+
+    &__title {
+        font-size: 3.5rem;
+        white-space: nowrap;
+        font-style: italic;
+        margin-bottom: 0;
+        margin-left: -1rem;
+        color: $color-black;
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        color: $color-green;
+    }
+}
